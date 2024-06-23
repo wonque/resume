@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Anatolijs Tolstihs} \\ \vspace{1pt}
+    \small +37129447492 $|$ \href{mailto:a.tolstihs@gmail.com}{\underline{a.tolstihs@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/anatolijs-tolstihs-570649143/}{\underline{LinkedIn}}
+    %  $|$ \href{https://github.com/wonque}{\underline{gitHub}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSubHeadingListStart
+\item{Software Developer with extensive experience in developing robust backend solutions using Java and Kotlin. Proven track record of contributing to enterprise-grade projects such as the Calypso trading platform, Swift.Online, and the Swifter insurance portfolio virtual advisor and back-office interface platform. Skilled in designing and implementing REST APIs, system integration, and migrating legacy systems. Dedicated to writing clean, testable, and maintainable code, with a constant drive to tackle new challenges and broaden expertise beyond backend development.}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{Feb 2024 -- present}
+      {Escode}{Riga, Latvia}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented REST APIs for accounts, insurance, loan and leases for mobile banking application}
+        \resumeItem{Migrated legacy servlet-based solutions to REST APIs}
+        \resumeItem{Expanded functional test coverage with Cucumber framework}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{Aug 2021 -- Feb 2024}
+      {C.T.Co}{Riga, Latvia}
+      \resumeItemListStart
+        \resumeItem{Participated in \emph{Camunda} process engine integration, designed new BPMN processes and implemented back-end solutions for process tasks}
+        \resumeItem{Designed and implemented new integrations with 3rd party REST APIs}
+        \resumeItem{Integrated multiple new insurance products support to the chat engine and CRM system}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Software Developer}{April 2020 -- Aug 2021}
+      {C.T.Co}{Riga, Latvia}
+      \resumeItemListStart
+        \resumeItem{Performed the migration of multiple microservices from \emph{Thorntail} and \emph{Spring Boot} frameworks to \emph{Quarkus}}
+        \resumeItem{Contributed to the project migration from Java to Kotlin and from Java 11 to Java 17}
+        \resumeItem{Expanded test coverage for 10+ microservices to at least 80\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior IT Solutions Developer}{Oct 2019 -- April 2020}
+      {SEB Global Services}{Riga, Latvia}
+      \resumeItemListStart
+        \resumeItem{Analyzed and improved configuration management documentation}
+        \resumeItem{Refactored and improved test coverage for multiple modules with 10k+ lines of code, significantly enhancing maintainability.}
+        \resumeItem{Collaborated closely with \emph{Calypso} platform users and business analysts}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RISEBA University}{Riga, Latvia}
+      {Bachelor's degree in Business Studies}{Sep. 2001 -- May 2007}
+  \resumeSubHeadingListEnd
+
+  % -----------Licenses & certifications
+% \section{Licenses \& certifications}
+%     \resumeSubHeadingListStart
+%       \resumeSubheading
+%       {\href{https://cert.nobleprog.com/certificate/721439/a85f7}{Bespoke Advanced PostgreSQL} by \emph{NobleProg}}{May 2023}
+%       {PostgreSQL installation and configuration. SQL query optimization}{}
+%       \resumeSubheading
+%   {\href{https://courses.edx.org/certificates/726c6307b54645f4ac2f46edc0465467}{CS1332xII: Data Structures \& Algorithms II} by \emph{edX}}{Nov 2022}
+%       {Binary Trees, Heaps, SkipLists and HashMaps}{}
+%         \resumeSubheading
+%     {\href{https://cert.nobleprog.com/certificate/687755/826b2}{Advanced Kotlin Programming} by \emph{NobleProg}}{Sep 2022}
+%       {Advanced Functions, reflections, generics, delegation, asynchronous Programming in Kotlin}{}
+%         \resumeSubheading
+%   {\href{https://courses.edx.org/certificates/2015adb93d88448199281e0f9b615659}{CS1332xI: Data Structures \& Algorithms I} by \emph{edX}}{Sep 2022}
+%       {ArrayLists, LinkedLists, Stacks and Queues}{}
+%         \resumeSubheading
+%   {\href{https://www.coursera.org/account/accomplishments/certificate/JEXU7QW8D8ZB}{Kotlin for Java Developers} by \emph{JetBrains via Coursera}}{Apr 2020}
+%       {Kotlin basics, functional programming, Kotlin data types, OOP}{}
+%     \resumeSubHeadingListEnd
+    
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, SQL} \\
+     \textbf{Frameworks}{: Quarkus, Spring Boot, jUnit, Mockito, Mockito Kotlin, Hibernate, JDBC, Cucumber} \\
+     \textbf{Databases}{: PostgreSQL, Oracle DB} \\
+     \textbf{Developer Tools}{: Git, Maven, Gradle, Liquibase, Apache Velocity, StringTemplate} \\
+     \textbf{CI/CD and Cloud}{: Jenkins, Azure, Docker, Kubernetes}\\
+    }}
+ \end{itemize}
+ 
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Professional working proficiency} \\
+     \textbf{Latvian}{: Limited working proficiency} \\
+     \textbf{Russian}{: Native}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
