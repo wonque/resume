@@ -47,7 +47,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -56,30 +56,30 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+    \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -97,72 +97,75 @@
 
 
 \begin{document}
-\begin{center}
-    \textbf{\Huge \scshape Anatolijs Tolstihs} \\ \vspace{1pt}
-    \small +37129447492 $|$ \href{mailto:a.tolstihs@gmail.com}{\underline{a.tolstihs@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/anatolijs-tolstihs-570649143/}{\underline{LinkedIn}}
-    %  $|$ \href{https://github.com/wonque}{\underline{gitHub}}
-\end{center}
+    \begin{center}
+        \textbf{\Huge \scshape Anatolijs Tolstihs} \\ \vspace{1pt}
+        \small +37129447492 $|$ \href{mailto:a.tolstihs@gmail.com}{\underline{a.tolstihs@gmail.com}} $|$
+        \href{https://www.linkedin.com/in/anatolijs-tolstihs-570649143/}{\underline{LinkedIn}}
+        %  $|$ \href{https://github.com/wonque}{\underline{gitHub}}
+    \end{center}
 
 %-----------SUMMARY-----------
-\section{Summary}
-\resumeSubHeadingListStart
-\item{Software Developer with expertise in backend development using Java and Kotlin. Proven track record in providing robust solutions for enterprise-grade projects in banking and insurance domains. Skilled in designing and implementing REST APIs, integrating third-party services, and migrating legacy systems to modern frameworks like Quarkus. Dedicated to writing clean, testable and maintainable code, with a constant drive to tackle new challenges and expand expertise beyond back-end development.}
+    \section{Summary}
+    \resumeSubHeadingListStart
+    \item{Backend software developer with experience delivering production systems in regulated banking and insurance domains. Strong in Java and Kotlin on Quarkus and Spring Boot microservices, with hands-on work across the full lifecycle of customer-facing financial products --- from API design through integration with core banking, payment, and KYC systems. Comfortable navigating legacy estates and regulatory constraints, and committed to clean, well-tested, maintainable code.}
 
-\resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
+    \section{Experience}
+    \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Java Developer}{Feb 2024 -- present}
-      {Escode}{Riga, Latvia}
-      \resumeItemListStart
-        \resumeItem{Designed and implemented API for new banking product - piggy bank}
-        \resumeItem{Designed and implemented new REST APIs for multiple mobile banking application domains, including insurance, accounts,
-        loans and leases}
-        \resumeItem{Migrated legacy servlet-based solutions to RESTful APIs}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Developer}{Aug 2021 -- Feb 2024}
-      {C.T.Co}{Riga, Latvia}
-      \resumeItemListStart
-        \resumeItem{Participated in \emph{Camunda} process engine integration, designed new BPMN processes and implemented back-end solutions for process tasks}
-        \resumeItem{Designed and implemented new integrations with 3rd party REST APIs}
-        \resumeItem{Integrated multiple new insurance products support to the chat engine and CRM system}
+    {Java Developer}{Feb 2024 -- present}
+    {Escode (contracted to Citadele Bank)}{Riga, Latvia}
+    \resumeItemListStart
+    \resumeItem{Currently developing core banking integration and contributing to REST API implementation for a new subscription-based banking product}
+    \resumeItem{Contributed to the in-app account opening feature, adapting an existing Internet Bank onboarding solution to the mobile channel}
+    \resumeItem{Designed and implemented the backend API for a new piggy bank savings product}
+    \resumeItem{Delivered REST APIs across multiple mobile banking domains - insurance, accounts, loans, and leases - collaborating with mobile and integration teams on contract design}
+    \resumeItem{Migrated legacy servlet-based endpoints to RESTful APIs, reducing maintenance overhead and aligning the estate with the bank's current architectural standards}
+    \resumeItem{Built a feature-flag management page in the internal JSP-based configuration tool, enabling business and operations users to toggle mobile app features per platform (iOS/Android) and app version}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Junior Software Developer}{April 2020 -- Aug 2021}
-      {C.T.Co}{Riga, Latvia}
-      \resumeItemListStart
-        \resumeItem{Performed the migration of multiple microservices from \emph{Thorntail} and \emph{Spring Boot} frameworks to \emph{Quarkus}}
-        \resumeItem{Contributed to the project migration from Java to Kotlin and from Java 11 to Java 17}
-        \resumeItem{Expanded test coverage for 10+ microservices to at least 80\%}
-      \resumeItemListEnd
+    {Software Developer}{Aug 2021 -- Feb 2024}
+    {C.T.Co}{Riga, Latvia}
+    \resumeItemListStart
+    \resumeItem{Designed BPMN process flows and implemented Kotlin task handlers as part of a \emph{Camunda} process engine integration}
+    \resumeItem{Implemented a conversational sales flow in the chat engine for three insurance products (House, Contents, Liability), integrating with the insurer's quoting and policy issuance APIs}
+    \resumeItem{Designed and implemented integrations with multiple third-party REST APIs across the insurance and CRM domains}
+    \resumeItem{Delivered features and bug fixes across a distributed-monolith estate of around 27 Kotlin modules}
+    \resumeItemListEnd
 
     \resumeSubheading
-      {Junior IT Solutions Developer}{Oct 2019 -- April 2020}
-      {SEB Global Services}{Riga, Latvia}
-      \resumeItemListStart
-        \resumeItem{Analyzed and improved configuration management documentation}
-        \resumeItem{Refactored and improved test coverage for multiple modules with 10k+ lines of code, significantly enhancing maintainability.}
-        \resumeItem{Collaborated closely with \emph{Calypso} platform users and business analysts}
-      \resumeItemListEnd
+    {Junior Software Developer}{April 2020 -- Aug 2021}
+    {C.T.Co}{Riga, Latvia}
+    \resumeItemListStart
+    \resumeItem{Performed the migration of multiple modules from \emph{Thorntail} and \emph{Spring Boot} frameworks to \emph{Quarkus}}
+    \resumeItem{Contributed to the project migration from Java to Kotlin and from Java 11 to Java 17}
+    \resumeItem{Expanded test coverage for 10+ modules to at least 80\%}
+    \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubheading
+    {Junior IT Solutions Developer}{Oct 2019 -- April 2020}
+    {SEB Global Services}{Riga, Latvia}
+    \resumeItemListStart
+    \resumeItem{Analyzed and improved configuration management documentation}
+    \resumeItem{Refactored and improved test coverage for multiple modules with 10k+ lines of code, significantly enhancing maintainability.}
+    \resumeItem{Collaborated closely with \emph{Calypso} platform users and business analysts}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
+    \section{Education}
+    \resumeSubHeadingListStart
     \resumeSubheading
-      {RISEBA University}{Riga, Latvia}
-      {Bachelor's degree in Business Studies}{Sep. 2001 -- May 2007}
-  \resumeSubHeadingListEnd
+    {RISEBA University}{Riga, Latvia}
+    {Bachelor's degree in Business Studies}{Sep. 2001 -- May 2007}
+    \resumeSubHeadingListEnd
 
-  % -----------Licenses & certifications
+    % -----------Licenses & certifications
 % \section{Licenses \& certifications}
 %     \resumeSubHeadingListStart
 %       \resumeSubheading
@@ -181,27 +184,28 @@
 %   {\href{https://www.coursera.org/account/accomplishments/certificate/JEXU7QW8D8ZB}{Kotlin for Java Developers} by \emph{JetBrains via Coursera}}{Apr 2020}
 %       {Kotlin basics, functional programming, Kotlin data types, OOP}{}
 %     \resumeSubHeadingListEnd
-    
+
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Kotlin, SQL} \\
-     \textbf{Frameworks}{: Quarkus, Spring Boot, jUnit, Mockito, Mockito Kotlin, Hibernate, JDBC, Cucumber} \\
-     \textbf{Databases}{: PostgreSQL, Oracle DB} \\
-     \textbf{Developer Tools}{: Git, Maven, Gradle, Liquibase, Apache Velocity, StringTemplate} \\
-     \textbf{CI/CD and Cloud}{: Jenkins, Azure, Docker, Kubernetes}\\
+        \textbf{Languages}{: Java, Kotlin, SQL} \\
+        \textbf{Frameworks}{: Quarkus, Spring Boot, jUnit, Mockito, Mockito Kotlin, Hibernate, JDBC, Cucumber} \\
+        \textbf{Databases}{: PostgreSQL, Oracle DB} \\
+        \textbf{Developer Tools}{: Git, Maven, Gradle, Liquibase, Apache Velocity, StringTemplate} \\
+        \textbf{CI/CD and Cloud}{: Jenkins, Azure, Docker, Kubernetes}\\
+        \textbf{AI Tools}{: Claude Code, Claude (claude.ai) --- daily use for development, code review, and technical research}\\
     }}
- \end{itemize}
- 
+    \end{itemize}
+
 %-----------LANGUAGES-----------
-\section{Languages}
- \begin{itemize}[leftmargin=0.15in, label={}]
+    \section{Languages}
+    \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{English}{: Professional working proficiency} \\
-     \textbf{Latvian}{: Limited working proficiency} \\
-     \textbf{Russian}{: Native}
+        \textbf{English}{: Professional working proficiency} \\
+        \textbf{Latvian}{: Limited working proficiency} \\
+        \textbf{Russian}{: Native}
     }}
- \end{itemize}
+    \end{itemize}
 %-------------------------------------------
 \end{document}
